@@ -1,10 +1,13 @@
 <!DOCTYPE html PUBLIC "-// W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="ru">
+	<!-- xmlns:v="" - настройка для outlook , чтобы он понимал комментарии  [if (gte mso 9)|(IE)] -->
 
 <head>
 	<meta html-equiv="Content-Type" content="text/html;  charset=UTF-8">
 	<meta html-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" /> -->
 	<title>Letter</title>
 
 	<style type="text/css">
@@ -15,6 +18,7 @@
 			mso-cellspacing: 0;
 			mso-padding-alt: 0;
 		}
+		/* mso- префикс для  outlook*/
 		td {
 			padding: 0;
 		}
@@ -61,6 +65,7 @@
       }
     }
 
+			/* Чтобы можно было использовать темную тему */
     /* Custom Dark Mode Colors */
     /* :root {
       color-scheme: light dark;
@@ -83,12 +88,14 @@
     } */
   </style>
 
+	<!-- Комментарии для outlook -->
 	  <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
       table {border-collapse: collapse !important;}
     </style>
   <![endif]-->
 
+	<!-- Код корректного отображения письма, если маcштаб экрана дисплея отличается от 100% -->
   <!--[if (gte mso 9)|(IE)]>
   <xml>
     <o:OfficeDocumentSettings>
@@ -100,6 +107,7 @@
 </head>
 
 <body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+	<!-- Margin - с большой буквы. Обязательно! Иначе не сработает -->
 
 	<!-- [if (gte nso 9)|(IE)]
 		<style type="text/css">
@@ -111,11 +119,13 @@
 	<center style="width: 100%; table-layout: fixed; background-color: #dde0e1; padding-top: 40px; padding-bottom: 40px;">
 		<div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
 
-			<!-- Preheader  (remove comment)-->
+			<!-- Preheader  (remove comment) - описание отображается в списке писем, а на самом письме - не видно (указанные стили его скрывают) -->
 			<div style="font-size: 0; color: #fafdfe; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px;">
 				Стартовое описание
 			</div>
-			<!-- End Preheader  (remove comment)-->
+			<!-- End Preheader  (remove comment) -->
+
+			<!-- Нам надо, чтобы письмо плавно сжималось, но outlook не понимает код, указанный выше в теге <center> для него ниже указывают условные комментарии с "фантомной таблицей", которая не видна, но корректно сжимается в outlook. Внутри "фантомной таблицы" находится основная таблица письма. В других браузерах именно она будет отображаться и срабатывать корректно -->
 
 			<!-- [if (gte nso 9)|(IE)]
 			<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="color: #565656;">
@@ -125,6 +135,57 @@
 
 
 	<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="color: #565656; font-family: 'Inter',sans-serif, Arial, Helvetica;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;">
+
+		<!-- Logo -->
+		<tr>
+			<td>
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<!-- border="0" cellspacing="0" cellpadding="0" role="presentation" прописываем для каждого тега <table> -->
+						<!-- role="presentation" указывает, что таблица не просто для данных, а письмо является по сути мини сайтом -->
+						<tr>
+							<td></td>
+						</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- End Logo -->
+		
+		<!-- Nav -->
+		<tr>
+			<td>
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- End Nav -->
+
+		<!-- Main -->
+		<tr>
+			<td>
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- End Main -->
+
+		<!-- Footer -->
+		<tr>
+			<td>
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- End Footer -->
+
 	</table>
 
 	<!--[if (gte mso 9)|(IE)]>
@@ -132,7 +193,7 @@
         </tr>
         </table>
       <![endif]-->
-			
+
 	</div>
 	</center>
 
