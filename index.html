@@ -14,6 +14,11 @@
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;500;700;900&family=Georgia:wght@400;600;800&display=swap');
 
+		/* Плавная прокрутка при переходе по якорям */
+		html{
+			scroll-behavior: smooth;
+		}
+
 		table {
 			border-spacing: 0;
 			mso-cellspacing: 0;
@@ -37,49 +42,6 @@
 			opacity: 0.5;
 		}
 
-		@media screen and (max-width: 599.98px) {}
-
-    @media screen and (max-width: 399.98px) {
-			/* сбрасываем padding на мобильных до 10px */
-      .mobile-padding {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-      }
-
-      .mobile-col-padding {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-      }
-
-      .two-columns .column {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
-      .two-columns .column img {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
-      .three-columns .column {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
-      .three-columns .column img {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
-			.four-columns .column{
-				width: 100% !important;
-        max-width: 100% !important;
-			}
-				.four-columns .column img{
-				width: 100% !important;
-        max-width: 100% !important;
-			}
-    }
 
 			/* Чтобы можно было использовать темную тему */
     /* Custom Dark Mode Colors */
@@ -123,7 +85,7 @@
 </head>
 
 <!-- <body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;"> -->
-	<body style="Margin:0;padding:0;min-width:100%;background-color:#ffffff; color: #1a1a1a;">
+	<body style="Margin:0; padding:0; min-width:100%; background-color:#ffffff; color: #1a1a1a;">
 	<!-- Margin - с большой буквы. Обязательно! Иначе не сработает -->
 
 	<!-- [if (gte mso 9)|(IE)]
@@ -134,14 +96,14 @@
 	<![endif] -->
 	
 	<!-- <center style="width: 100%; table-layout: fixed; background-color: #dde0e1; padding-top: 40px; padding-bottom: 40px;"> -->
-		<center style="width: 100%; table-layout: fixed; background-color: #ffffff; padding-top: 40px; padding-bottom: 40px;">
+		<center style="width: 100%; table-layout: fixed; background-color: #ffffff;  padding-bottom: 30px;">
 		<!-- <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2);"> -->
 			<!--  -->
 		<!-- <div style="max-width: 600px;background-color: #000000;box-shadow: 0 0 10px rgba(0, 0, 0, .2);"> -->
-			<div style="max-width: 600px;background-color: #000000;">
+			<div style="max-width: 600px;background-color: #ffffff;">
 
 			<!-- Preheader  (remove comment) - описание отображается в списке писем, а на самом письме - не видно (указанные стили его скрывают) -->
-			<div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
+			<div style="font-size: 0px; color: #fafdfe; line-height: 1px;mso-line-height-rule:exactly; display: none; max-width: 0px; max-height: 0px;opacity: 0;overflow: hidden; mso-hide:all;">
 				Стартовое описание
 			</div>
 			<!-- End Preheader  (remove comment) -->
@@ -165,8 +127,8 @@
 						<!-- role="presentation" указывает, что таблица не просто для данных, а письмо является по сути мини сайтом -->
 						<tr>
 							<td style="padding: 30px; text-align: center;">
-								<a href="https://goldapple.by/brands/lancome" style="cursor: pointer;" target="_blank">
-									<img src="logo_lancome.jpg" alt="Lancome logo" border="0" width="240">
+								<a href="https://goldapple.by/brands/lancome" target="_blank">
+									<img src="https://i.postimg.cc/d3v6X9PD/logo-lancome.jpg" alt="Lancome logo" border="0" width="240"/>
 								</a>
 							</td>
 						</tr>
@@ -180,10 +142,10 @@
 			<td>
 				<table id="menu" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="font-family: 'Georgia', serif; font-size: 10px; font-weight: 800; width: 50%;max-width: 600px; text-transform: uppercase;">
 					<tr>
-						<td style="padding: 15px 10px 15px 10px; text-align: center; cursor: pointer;"><a href="https://goldapple.by/brands/lancome?categories=2000000853" style="color: #000000;" target="_blank">Макияж</a></td>
-						<td style="padding: 15px 10px 15px 10px; text-align: center; cursor: pointer;"><a href="https://goldapple.by/brands/lancome?categories=2000000854" style="color: #000000;" target="_blank">Уход</a></td>
-						<td style="padding: 15px 10px 15px 10px; text-align: center; cursor: pointer;"><a href="https://goldapple.by/brands/lancome?categories=2000000855" style="color: #000000;" target="_blank">Ароматы</a></td>
-						<td style="padding: 15px 10px 15px 10px; text-align: center; cursor: pointer;"><a href="https://goldapple.by/brands/lancome?categories=2000001070" style="color: #000000;" target="_blank">Новинки</a></td>
+						<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000853" style="color: #000000;" target="_blank">Макияж</a></td>
+						<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000854" style="color: #000000;" target="_blank">Уход</a></td>
+						<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000855" style="color: #000000;" target="_blank">Ароматы</a></td>
+						<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000001070" style="color: #000000;" target="_blank">Новинки</a></td>
 					</tr>
 				</table>
 			</td>
@@ -194,10 +156,10 @@
 		<!-- Banner -->
 		<tr>
 			<td>
-				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%; max-width: 600px;">
 					<tr>
 						<td>
-							<img src="happy.jpg" alt="Lancome banner" border="0" width="100%" max-width="600px">
+							<img src="https://i.postimg.cc/PJkVHjZX/happy.jpg" alt="Lancome banner" border="0" width="600" style="width: 100%; max-width: 600px;"/>
 						</td>
 					</tr>
 				</table>
@@ -207,23 +169,23 @@
 
 		<!-- Offer -->
 		<tr>
-			<td>
-				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 25px 0 40px 0; color: #1a1a1a;">
+			<td style="padding: 25px 20px 25px 20px;">
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%; max-width: 600px; padding: 0; color: #1a1a1a;">
 					<tr>
 						<td style="text-align: center;">
-							<h1 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 30px; font-weight: 400; margin: 0 0 22px 0; padding: 0;">Lancôme дарит счастье!</h1>
+							<h1 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 30px; font-weight: 400; padding: 0 0 22px 0; margin: 0;">Lancôme дарит счастье!</h1>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p style="text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 400; margin: 0 0 25px 0; padding: 0;line-height: 1.3;">Специальная цена - 25%
+							<p style="text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 400; padding: 0 0 25px 0; margin: 0;line-height: 1.3;">Специальная цена - 25%
 								<br>Только до 8 марта
 							</p>
 						</td>
 					</tr>
 					<tr>
 						<td >
-							<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 600; margin: 0 0 25px 0; padding: 0;line-height: 1.2;" >Наши бестселлеры не оставят вас равнодушными!
+							<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 600; padding: 0 0 25px 0; margin: 0;line-height: 1.2;" >Наши бестселлеры не оставят вас равнодушными!
 								<br>Не упустите шанс порадовать себя.
 							</p>
 						</td>
@@ -247,89 +209,102 @@
 
 		<!-- Goods -->
 		<tr>
-			<td>
-				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0px; width: 100%; max-width: 600px; ">
+			<td style="padding: 13px 20px 0 20px;">
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%; max-width: 600px;">
 					<tr>
 						<td style="text-align: center;">
 							<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 22px; font-weight: 400; margin: 0; padding: 0;">Ваш путь к счастью</h2>
 						</td>
 					</tr>
+				</table>
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
+			<!-- [if (gte mso 9)|(IE)]>
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 					<tr>
-						<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+						<td>
+					<![endif] -->
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+						<tr>
+							<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 									<tr>
 										<td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
-										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<img src="lipstick.jpg" alt="Lipstick" border="0" width="200" style="max-width: 200px;">
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-										</td><td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
-										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Улыбайтесь!</h3>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Украсьте вашу улыбку одним из соблазнительных оттенков <span style="font-size: 16px; font-weight: 900;">L`Absolu Rouge.</span></p>
-														</td>
-													</tr>
-													<tr>
-														<td style="text-align: center;" >
-															<a href="https://goldapple.by/19000000725-teint-idole-ultra-wear-stick-blush-stick" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-											</td>
-											</tr>
+											<img src="https://i.postimg.cc/Wzn8PJT8/lipstick.jpg" alt="Lipstick" border="0" width="200" style="max-width: 200px;"/>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- [if (gte mso 9)|(IE)]>
+						</td><td>
+					<![endif] -->
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+						<tr>
+							<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+									<tr>
+										<td>
+											<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Улыбайтесь!</h3>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Украсьте вашу улыбку одним из соблазнительных оттенков <span style="font-size: 16px; font-weight: 900;">L`Absolu Rouge.</span></p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+													<td style="text-align: center;" >
+														<a href="https://goldapple.by/19000000725-teint-idole-ultra-wear-stick-blush-stick" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+													</td>
+												</tr>
 											</table>
-									<![endif] -->
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-						<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- [if (gte mso 9)|(IE)]>
+							</td>
+							</tr>
+							</table>
+					<![endif] -->
+				</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
+				<!-- [if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+						<tr>
+							<td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+											<td>
+												<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Звездный взгляд</h3>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Гипнотически привлекательные ресницы вместе с тушью <span style="font-size: 16px; font-weight: 900;">Hypnôse.</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center">
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Звездный взгляд</h3>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Гипнотически привлекательные ресницы вместе с тушью <span style="font-size: 16px; font-weight: 900;">Hypnôse.</span></p>
-														</td>
-													</tr>
-													<tr>
+                        	<tr>
 														<td style="text-align: center;" >
 															<a href="https://goldapple.by/19000012862-hypnose-l-absolu-de-noir" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
@@ -338,109 +313,119 @@
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-										</td><td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+							</td><td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<img src="mascara.jpg" alt="Mascara" border="0" width="200" style="max-width: 200px;">
+											<td>
+												<img src="https://i.postimg.cc/rFVgNgNP/mascara.jpg" alt="Mascara" border="0" width="200" style="max-width: 200px;"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+						<![endif] -->
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
+				<!-- [if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+						<tr>
+							<td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+										<tr>
+											<td>
+												<img src="https://i.postimg.cc/QdVbRtPg/perfume.jpg" alt="Eau de Toilette" border="0" width="200" style="max-width: 200px;">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+							</td><td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+										<tr>
+											<td>
+												<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Озарите свою жизнь счастьем</h3>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сияйте, как будто вас никто не видит вместе с новой туалетной водой <span style="font-size: 16px; font-weight: 900;">La Vie Est Belle.</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center">
+											 	<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                         	<tr>
+											    	<td style="text-align: center;" >
+												   	<a href="https://goldapple.by/7282300001-la-vie-est-belle" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
-
 												</table>
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-											</td>
-											</tr>
-											</table>
-									<![endif] -->
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-						<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+						<![endif] -->
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
+				<!-- [if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+						<tr>
+							<td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<img src="perfume.jpg" alt="Eau de Toilette" border="0" width="200" style="max-width: 200px;">
-														</td>
-													</tr>
-
-												</table>
+											<td>
+												<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Счастье и молодость навсегда</h3>
 											</td>
 										</tr>
-									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-										</td><td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Озарите свою жизнь счастьем</h3>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сияйте, как будто вас никто не видит вместе с новой туалетной водой <span style="font-size: 16px; font-weight: 900;">La Vie Est Belle.</span></p>
-														</td>
-													</tr>
-													<tr>
-														<td style="text-align: center;" >
-															<a href="https://goldapple.by/7282300001-la-vie-est-belle" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
-														</td>
-													</tr>
-												</table>
+											<td>
+												<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сияйте от счастья вместе с <span style="font-size: 16px; font-weight: 900;">Advanced Génifique.</span></p>
 											</td>
 										</tr>
-									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-											</td>
-											</tr>
-											</table>
-									<![endif] -->
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-						<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+											<td align="center">
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
-														<td>
-															<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Счастье и молодость навсегда</h3>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сияйте от счастья вместе с <span style="font-size: 16px; font-weight: 900;">Advanced Génifique.</span></p>
-														</td>
-													</tr>
-													<tr>
-														<td style="text-align: center;" >
+														<td style="text-align: center;">
 															<a href="https://goldapple.by/15152100041-advanced-genifique" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
@@ -448,68 +433,73 @@
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-										</td><td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+							</td><td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<img src="genifique.jpg" alt="Genifique" border="0" width="200" style="max-width: 200px;">
-														</td>
-													</tr>
-												</table>
+											<td>
+												<img src="https://i.postimg.cc/g0QBMR26/genifique.jpg" alt="Genifique" border="0" width="200" style="max-width: 200px;">
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-											</td>
-											</tr>
-											</table>
-									<![endif] -->
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-						<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+						<![endif] -->
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="two-columns mobile-padding">
+				<!-- [if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+						<tr>
+							<td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
-												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<img src="tonal.jpg" alt="Lipstick" border="0" width="200" style="max-width: 200px;">
-														</td>
-													</tr>
-
-												</table>
+											<td>
+												<img src="https://i.postimg.cc/ydCygTNn/tonal.jpg" alt="Lipstick" border="0" width="200" style="max-width: 200px;"/>
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-										</td><td>
-									<![endif] -->
-									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+							</td><td>
+						<![endif] -->
+						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 250px; display: inline-block;" class="column">
+							<tr>
+								<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+									<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td align="center" style="padding: 20px 20px 20px 20px;" class="mobile-col-padding">
+											<td>
+												<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Естественное сияние</h3>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сочетание лучших ингридиентов в <span style="font-size: 16px; font-weight: 900;">Teint Idole Ultra Wear SPF15.</span></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center">
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-													<tr>
-														<td>
-															<h3 style="margin: 0; text-align: center; font-family: 'Georgia', serif; font-size: 22px; font-weight: 500; letter-spacing: 1.5;">Естественное сияние</h3>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.2; line-height: 20px; margin: 20px 0 20px 0;" >Сочетание лучших ингридиентов в <span style="font-size: 16px; font-weight: 900;">Teint Idole Ultra Wear SPF15.</span></p>
-														</td>
-													</tr>
 													<tr>
 														<td style="text-align: center;" >
 															<a href="https://goldapple.by/14169600004-effacernes-long-tenue-spf-30" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
@@ -519,22 +509,22 @@
 											</td>
 										</tr>
 									</table>
-									<!-- [if (gte mso 9)|(IE)]>
-											</td>
-											</tr>
-											</table>
-									<![endif] -->
-						</td>
-					</tr>
-				</table>
+								</td>
+							</tr>
+						</table>
+						<!-- [if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+						<![endif] -->
 			</td>
 		</tr>
 		<!-- End Goods -->
 
 		<!-- Loyalty program -->
 		<tr>
-			<td>
-				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 30px 0px 35px 0px;width: 100%; max-width: 600px;">
+			<td style="padding: 30px 0px 35px 0px;" class="mobile-padding">
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%; max-width: 600px;">
 					<tr>
 						<td>
 							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0; width: 100%; max-width: 600px; display: inline-block;">
@@ -544,7 +534,7 @@
 										</div>
 									</td>
 									<td>
-										<img style="padding: 0 20px 0 20px; width: 35px;" src="rose.jpg" alt="Divider">
+										<img style="padding: 0 20px 0 20px; width: 35px;" src="https://i.postimg.cc/L87TRSKc/rose.jpg" alt="Divider"/>
 									</td>
 									<td style="text-align: right; padding: 0;  width: 44%;">
 										<div style="height: 1.5px; background-color: #6A6A6A;">
@@ -556,20 +546,14 @@
 					</tr>
 					<!--  -->
 					<tr>
-						<td>
-							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0px; width: 100%; max-width: 600px;">
-							<tr>
-								<td style="text-align: center; padding: 15px 25px 40px 25px;">
-									<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; margin: 0; padding: 0;">Вступайте в программу лояльности Elite rewards на сайте goldapple.by</h2>
-								</td>
-							</tr>
-							<!--  -->
-							<tr>
-								<td >
-									<img src="gifts.jpg" alt="Gifts" border="0" width="100%" max-width="600px">
-								</td>
-							</tr>
-							</table>
+						<td style="text-align: center; padding: 15px 25px 40px 25px;" class="title">
+							<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; margin: 0; padding: 0;">Вступайте в программу лояльности Elite rewards на сайте goldapple.by</h2>
+						</td>
+					</tr>
+					<!--  -->
+					<tr>
+						<td >
+							<img src="https://i.postimg.cc/sx96DN9p/gifts.jpg" alt="Gifts" border="0" width="600" style="width: 100%; max-width: 600px;"/>
 						</td>
 					</tr>
 				</table>
@@ -579,220 +563,221 @@
 
 		<!-- Bonuses -->
 		<tr>
-			<td>
-				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0px 15px 35px 15px; width: 100%; max-width: 600px;">
+			<td style="padding: 0px 10px 45px 10px;" class="title">
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width: 100%; max-width: 600px;">
 					<tr>
-						<td style="text-align: center; padding: 0 0 45px 0;">
+						<td style="text-align: center; ">
 							<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; margin: 0; padding: 0;">Как зарабатывать баллы</h2>
 						</td>
 					</tr>
+				</table>
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="three-columns mobile-padding">
+			<!--[if (gte mso 9)|(IE)]>
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+				<tr>
+				<td>
+			<![endif]-->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; height: 100%; max-height: 170px;" class="column">
 					<tr>
-						<td align="center" style="padding: 0; font-size: 0; background-color: aqua; " class="three-columns mobile-padding">
-							<!--[if (gte mso 9)|(IE)]>
-                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                <tr>
-                <td>
-              <![endif]-->
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr>
-									<td align="center" style="background-color: blueviolet;" >
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center">
-													<img src="icon-sale.jpg" alt="Icon-sale" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Совершайте покупки
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 10 баллов за каждые 100 р.
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								</td><td>
-							<![endif] -->
-					<!--  -->
-					
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px;  padding: 0 15px 30px 15px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr>
-									<td align="center" style="background-color: blueviolet;">
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center">
-													<img src="icon-reviews.jpg" alt="Icon-reviews" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Оставляйте отзывы на товары Lancôme
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >150 баллов
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								</td><td>
-							<![endif] -->
-					<!--  -->
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr >
-									<td align="center" style="background-color: blueviolet; ">
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center" >
-													<img src="icon-frends.jpg" alt="Icon-frends" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Пригласите друга
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >100 баллов
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-					<!--  -->
-						</td>
-					</tr>
-					<tr>
-						<td align="center" style="padding: 0; font-size: 0; background-color: aqua; " class="three-columns mobile-padding">
-							<!--[if (gte mso 9)|(IE)]>
-                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                <tr>
-                <td>
-              <![endif]-->
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr>
-									<td align="center" style="background-color: blueviolet;" >
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center">
-													<img src="icon-social.jpg" alt="Icon-social" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подключите свои аккаунты в соцсетях
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 100 баллов
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								</td><td>
-							<![endif] -->
-					<!--  -->
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px;  padding: 0 15px 30px 15px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr>
-									<td align="center" style="background-color: blueviolet;">
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center">
-													<img src="icon-mailing.jpg" alt="Icon-mailing" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подпишитесь на рассылку
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >200 баллов
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								</td><td>
-							<![endif] -->
-					<!--  -->
-							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; background-color: greenyellow; height: 100%; max-height: 170px;" class="column">
-								<tr >
-									<td align="center" style="background-color: blueviolet; ">
-										<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-												<td align="center" >
-													<img src="icon-subscription.jpg" alt="Icon-subscription" border="0" width="60" style="max-width: 60px;">
-												</td>
-											</tr>
-												<tr>
-												<td style="height: 50px; vertical-align: top;">
-													<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подпишитесь на наши соцсети
-													</p>
-												</td>
-											</tr>
-												<tr>
-												<td style="background-color: blue; height: 30px;">
-													<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 200 баллов
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- [if (gte mso 9)|(IE)]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-									<tr>
-										<td>
-									<![endif] -->
-					<!--  -->
-						</td>
-					</tr>
-					<tr>
-						<td style="padding: 15px 0px 0px 0px;">
+						<td align="center" >
 							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 								<tr>
-									<td class="button" style="text-align: center;   background-color: #000000;">
-										<a href="https://goldapple.by/cards/about"  style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 14px; line-height: 16px; font-weight: 300; text-transform: uppercase; padding: 10px 40px 10px 40px; display: inline-block;" target="_blank">Зарегистрироваться <br> в Elite rewards</a>
-										<!-- чтобы отображались большие левые и правые поля в кнопке в outlook padding указывают с одинаковыми значениями, а перед надписью ставят пробелы (то количество, которое визуально соответствует размеру кнопки) &nbsp;&nbsp; Подробнее &nbsp;&nbsp; -->
+									<td align="center">
+										<img src="https://i.postimg.cc/pLdGRk9F/icon-sale.jpg" alt="Icon-sale" border="0" width="60" style="max-width: 60px;"/>
+									</td>
+								</tr>
+								<tr>
+									<td style="height: 50px; vertical-align: top;">
+										<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Совершайте покупки
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="height: 30px;">
+										<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 10 баллов за каждые 100 р.
+										</p>
 									</td>
 								</tr>
 							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td><td>
+				<![endif] -->
+			<!--  -->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px;  padding: 0 15px 30px 15px; display: inline-block; height: 100%; max-height: 170px;" class="column">
+					<tr>
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center">
+										<img src="https://i.postimg.cc/X7LHRtvW/icon-reviews.jpg" alt="Icon-reviews" border="0" width="60" style="max-width: 60px;"/>
+									</td>
+								</tr>
+									<tr>
+									<td style="height: 50px; vertical-align: top;">
+										<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Оставляйте отзывы на товары Lancôme
+										</p>
+									</td>
+								</tr>
+									<tr>
+									<td style="height: 30px;">
+										<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >150 баллов
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td><td>
+				<![endif] -->
+			<!--  -->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; height: 100%; max-height: 170px;" class="column">
+					<tr >
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center" >
+										<img src="https://i.postimg.cc/8khnH7Qj/icon-frends.jpg" alt="Icon-frends" border="0" width="60" style="max-width: 60px;"/>
+									</td>
+								</tr>
+									<tr>
+									<td style="height: 50px; vertical-align: top;">
+										<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Пригласите друга
+										</p>
+									</td>
+								</tr>
+									<tr>
+									<td style="height: 30px;">
+										<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >100 баллов
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+				</td>
+				</tr>
+				</table>
+			<![endif] -->
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="three-columns mobile-padding">
+				<!--[if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+					<td>
+				<![endif]-->
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; height: 100%; max-height: 170px;" class="column">
+						<tr>
+							<td align="center">
+								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+									<tr>
+										<td align="center">
+											<img src="https://i.postimg.cc/ht3Cjxx3/icon-social.jpg" alt="Icon-social" border="0" width="60" style="max-width: 60px;"/>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 50px; vertical-align: top;">
+											<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подключите свои аккаунты в соцсетях
+											</p>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 30px;">
+											<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 100 баллов
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- [if (gte mso 9)|(IE)]>
+						</td><td>
+					<![endif] -->
+					<!--  -->
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px;  padding: 0 15px 30px 15px; display: inline-block; height: 100%; max-height: 170px;" class="column">
+						<tr>
+							<td align="center">
+								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+									<tr>
+										<td align="center">
+											<img src="https://i.postimg.cc/02PXH9PZ/icon-mailing.jpg" alt="Icon-mailing" border="0" width="60" style="max-width: 60px;"/>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 50px; vertical-align: top;">
+											<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подпишитесь на рассылку
+											</p>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 30px;">
+											<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >200 баллов
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- [if (gte mso 9)|(IE)]>
+						</td><td>
+					<![endif] -->
+					<!--  -->
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; padding: 0 15px 30px 15px; width: 100%; max-width: 150px; display: inline-block; height: 100%; max-height: 170px;" class="column">
+						<tr >
+							<td align="center">
+								<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+									<tr>
+										<td align="center" >
+											<img src="https://i.postimg.cc/hGz27j14/icon-subscription.jpg" alt="Icon-subscription" border="0" width="60" style="max-width: 60px;"/>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 50px; vertical-align: top;">
+											<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; text-transform: uppercase;color: #af2658; margin: 5px 0 5px 0;" >Подпишитесь на наши соцсети
+											</p>
+										</td>
+									</tr>
+										<tr>
+										<td style="height: 30px;">
+											<p style="text-align: center; vertical-align: middle; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.2; line-height: 14px; margin: 5px 0 5px 0;" >до 200 баллов
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+						<!-- [if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+					<![endif] -->
+					<!--  -->
+				</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td style="padding: 10px 0px 30px 0px;">
+				<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+						<td class="button" style="text-align: center;   background-color: #000000;">
+							<a href="https://goldapple.by/cards/about"  style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 14px; line-height: 16px; font-weight: 300; text-transform: uppercase; padding: 10px 40px 10px 40px; display: inline-block;" target="_blank">Зарегистрироваться <br> в Elite rewards</a>
+							<!-- чтобы отображались большие левые и правые поля в кнопке в outlook padding указывают с одинаковыми значениями, а перед надписью ставят пробелы (то количество, которое визуально соответствует размеру кнопки) &nbsp;&nbsp; Подробнее &nbsp;&nbsp; -->
 						</td>
 					</tr>
 				</table>
@@ -802,197 +787,337 @@
 				
 		<!-- Advantages -->
 		<tr>
-			<td>
-				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0px 0px 25px 0px; width: 100%; max-width: 600px;">
+			<td style="padding: 0px 0px 0cap 0px;">
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%; max-width: 600px;">
 					<tr>
 						<td style="padding: 0; ">
 							<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
 							</div>
 						</td>
 					</tr>
-					<!--  -->
+				<!--  -->
 					<tr>
-						<td>
-							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 0px 5px 0px 5px; width: 100%; max-width: 600px;">
-								<tr>
-									<td style="text-align: center; ">
-										<h3 style="text-transform: uppercase; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 400; margin: 0; padding: 0;">Покупайте ваши любимые продукты Lancôme в <br>официальном интернет-магазине </h3>
-									</td>
-								</tr>
-								<tr>
-									<td align="center" style="padding: 20px 0 0 0; font-size: 0; background-color: aqua; " class="four-columns mobile-padding">
-										<!--[if (gte mso 9)|(IE)]>
-											<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-											<tr>
-											<td>
-										<![endif]-->
-										<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 0 15px 0px 15px; width: 100%; max-width: 85px; display: inline-block; background-color: greenyellow;" class="column">
-											<tr>
-												<td align="center" style="background-color: blueviolet;" >
-													<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-														<tr>
-															<td align="center" style="height: 40px;">
-																<img src="hotline.jpg" alt="Icon-sale" border="0" width="30" style="max-width: 30px;">
-															</td>
-														</tr>
-															<tr>
-															<td style="height: 30px; max-height: 30px; vertical-align: top;">
-																<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Горячая линия
-																</p>
-															</td>
-														</tr>
-															<tr>
-															<td style="background-color: blue;">
-																<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1;  letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >помощь при оформлении заказа и консультация по продукту
-																</p>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-										<!-- [if (gte mso 9)|(IE)]>
-											</td><td>
-										<![endif] -->
-								<!--  -->
-								
-										<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 85px;  margin: 0 15px 0px 15px; display: inline-block; background-color: greenyellow; " class="column">
-											<tr>
-												<td align="center" style="background-color: blueviolet;">
-													<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-														<tr>
-															<td align="center" style="height: 40px;">
-																<img src="delivery.jpg" alt="Icon-reviews" border="0" width="30" style="max-width: 30px;">
-															</td>
-														</tr>
-															<tr>
-															<td style="height: 30px; max-height: 30px; vertical-align: top;">
-																<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Бесплатная доставка
-																</p>
-															</td>
-														</tr>
-															<tr>
-															<td style="background-color: blue;">
-																<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1; letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >при заказе от 3 000 рублей
-																</p>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-										<!-- [if (gte mso 9)|(IE)]>
-											</td><td>
-										<![endif] -->
-								<!--  -->
-										<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 0 15px 30px 15px; width: 100%; max-width: 85px; display: inline-block; background-color: greenyellow; " class="column">
-											<tr >
-												<td align="center" style="background-color: blueviolet; ">
-													<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-														<tr>
-															<td align="center" style="height: 40px;">
-																<img src="compliments.jpg" alt="Icon-frends" border="0" width="35" style="max-width: 35px;">
-															</td>
-														</tr>
-															<tr>
-															<td style="height: 30px; max-height: 30px; vertical-align: top;">
-																<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Комплименты
-																</p>
-															</td>
-														</tr>
-															<tr>
-															<td style="background-color: blue; ">
-																<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1;letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >в подарок пробники при любом заказе
-																</p>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-										<!-- [if (gte mso 9)|(IE)]>
-											</td><td>
-										<![endif] -->
-								<!--  -->
-										<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 0 15px 30px 15px; width: 100%; max-width: 85px; display: inline-block; background-color: greenyellow;" class="column">
-											<tr>
-												<td align="center" style="background-color: blueviolet;" >
-													<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-														<tr>
-															<td align="center" style="height: 40px;">
-																<img src="blog.jpg" alt="Icon-sale" border="0" width="30" style="max-width: 30px;">
-															</td>
-														</tr>
-															<tr>
-															<td style="height: 30px; max-height: 30px; vertical-align: top;">
-																<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Блог
-																</p>
-															</td>
-														</tr>
-															<tr>
-															<td style="background-color: blue; ">
-																<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1; letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >Советы красоты. <br> Правильный макияж. <br> Мания Lancôme.
-																</p>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-										<!-- [if (gte mso 9)|(IE)]>
-											<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-												<tr>
-													<td>
-												<![endif] -->
-								<!--  -->
-									</td>
-								</tr>
-					<!--  -->
-							</table>
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-						<td style="padding: 0; ">
-							<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
-							</div>
-						</td>
-					</tr>
+						<td style="text-align: center; padding: 0px 5px 0px 5px;">
+							<h3 style="text-transform: uppercase; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 400; margin: 0; padding: 0;">Покупайте ваши любимые продукты Lancôme в <br>официальном интернет-магазине </h3>
+							</td>
+						</tr>
 				</table>
 			</td>
 		</tr>
+		<!--  -->
+		<tr>
+			<td align="center" style="padding: 0; font-size: 0;" class="four-columns mobile-padding">
+				<!--[if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<tr>
+					<td>
+				<![endif]-->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 20px 15px 10px 15px; width: 100%; max-width: 85px; display: inline-block;" class="column">
+					<tr>
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center" style="height: 40px;">
+										<img src="https://i.postimg.cc/3RGfzRkf/hotline.jpg" alt="Icon-sale" border="0" width="30" style="max-width: 30px;"/>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td style="height: 30px; max-height: 30px; vertical-align: top;">
+										<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Горячая линия
+										</p>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td>
+										<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1;  letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >помощь при оформлении заказа и консультация по продукту
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td><td>
+				<![endif] -->
+			<!--  -->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 85px;  margin: 20px 15px 10px 15px; display: inline-block;" class="column">
+					<tr>
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center" style="height: 40px;">
+										<img src="https://i.postimg.cc/kgjHbLrs/delivery.jpg" alt="Icon-reviews" border="0" width="30" style="max-width: 30px;"/>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td style="height: 30px; max-height: 30px; vertical-align: top;">
+										<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Бесплатная доставка
+										</p>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td>
+										<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1; letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >при заказе от 3 000 рублей
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td><td>
+				<![endif] -->
+			<!--  -->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 20px 15px 10px 15px; width: 100%; max-width: 85px; display: inline-block;" class="column">
+					<tr >
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center" style="height: 40px;">
+										<img src="https://i.postimg.cc/dVQXDwfD/compliments.jpg" alt="Icon-frends" border="0" width="35" style="max-width: 35px;"/>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td style="height: 30px; max-height: 30px; vertical-align: top;">
+										<p style="text-align: center;  font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Комплименты
+										</p>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td>
+										<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1;letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >в подарок пробники при любом заказе
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td><td>
+				<![endif] -->
+			<!--  -->
+				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; margin: 20px 15px 10px 15px; width: 100%; max-width: 85px; display: inline-block;" class="column">
+					<tr>
+						<td align="center">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+								<tr>
+									<td align="center" style="height: 40px;">
+										<img src="https://i.postimg.cc/Hs9RpVBf/blog.jpg" alt="Icon-sale" border="0" width="30" style="max-width: 30px;"/>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td style="height: 30px; max-height: 30px; vertical-align: top;">
+										<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 1.2; line-height: 12px; text-transform: uppercase; margin: 5px 0 2.5px 0;" >Блог
+										</p>
+									</td>
+								</tr>
+								<!--  -->
+								<tr>
+									<td>
+										<p style="text-align: center; vertical-align: top; font-family: 'Arial', sans-serif; font-size: 9px; font-weight: 400; color: #D1D0D1; letter-spacing: 1.2; line-height: 10px; margin: 2.5px 0 5px 0;" >Советы красоты.  Правильный макияж.  Мания Lancôme.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- [if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+				<![endif] -->
+			</td>
+		</tr>
 		<!-- End Advantages -->
-
 		<!-- End Main -->
 
 		<!-- Footer -->
-
 		<!-- Contacts -->
 		<tr>
-			<td>
-				<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+			<td style="padding: 0; ">
+				<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
+				</div>
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td style="padding: 0px 45px 0px 50px;font-size: 0;" class="two-columns mobile-padding">
+				<!--[if (gte mso 9)|(IE)]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 					<tr>
-						<td></td>
-					</tr>
+					<td>
+				<![endif]-->
+
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px; padding: 0px 0px 10px 0px; display: inline-block; float: left; text-align: left;" class="column">
+						<tr>
+							<td class="mobile-col-padding" >
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="text-align: left;">
+									<tr>
+										<td>
+											<img src="https://i.postimg.cc/9XtJ9sZ9/message-icon.jpg" alt="Icon-message" border="0" width="15" style="max-width: 15px; vertical-align: medium;"/>
+											<p style="text-align: left;  text-transform: uppercase; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 400;  display: inline-block; line-height: 22px; padding-left: 10px; margin: 0; vertical-align: top;" >Нужна помощь?
+											</p>
+										</td>
+									</tr>
+									<!--  -->
+									<tr>
+										<td>
+											<p style="text-align: left;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600;   color: #BFBFC1; padding: 10px 0 0 0; margin: 0 0 0 0;" >8 800 500 3160
+											</p>
+										</td>
+									</tr>
+									<!--  -->
+									<tr>
+										<td>
+											<p style="text-align: left;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 400;   color: #BFBFC1; margin: 0 0 0 0;" >9:00 - 21:00 (ежедневно)
+											</p>
+										</td>
+									</tr>
+									<!--  -->
+									<tr>
+										<td id="email">
+											<a href="mailto:commerce@goldapple.by" style=" color: #BFBFC1;   font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-decoration: underline; padding: 10px 0px 0px 0px; display: inline-block; margin: 0 0 0 0;" target="_blank" >Отправить нам email 24/7</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<!--[if (gte mso 9)|(IE)]>
+				</td><td>
+				<![endif]-->
+							
+					<table border="0"  cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top;  width: 100%; max-width: 220px; margin: 0; padding: 0px 0px 10px 0px; display: inline-block; float: right;"  class="column">
+						<tr>
+							<td class="mobile-col-padding" style="text-align: right;">
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation" >
+									<tr>
+										<td style="padding-bottom: 30px;">
+											<a href="https://goldapple.by/stockists" style="cursor: pointer; text-align: left;  text-transform: uppercase; font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: -0.8; line-height: 24px; color: #1a1a1a;  padding: 0px 0px 0px 10px; margin: 0; vertical-align: top;" target="_blank">
+												<img style="display: inline-block; padding-right: 3px; vertical-align: top" src="https://i.postimg.cc/tCBkSPrC/place-icon.jpg" alt="PUBLIC" border="0" width="18"/>
+												Найти ближайший магазин
+											</a>
+										</td>
+									</tr>
+									<!--  -->
+									<tr>
+										<td class="five-columns">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="display: inline-block; vertical-align: middle; width: 100%; max-width: 42px;" >
+												<tr>
+													<td style="padding: 0px 10px; text-align: center;">
+															<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+																<tr>
+																	<td>
+																		<a href="https://www.facebook.com/goldapple.ru" style="cursor: pointer;" target="_blank">
+																			<img src="https://i.postimg.cc/vHsCFWLr/facebook-icon.jpg" alt="Facebook" border="0" width="22" style="max-width: 22px"/>
+																		</a>
+																	</td>
+																</tr>
+															</table>
+													</td>
+												</tr>
+											</table>
+											<!--  -->
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="display: inline-block; vertical-align: middle; width: 100%; max-width: 42px;">
+												<tr>
+													<td style="padding: 0px 10px; text-align: center;">
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+															<tr>
+																<td>
+																	<a href="https://vk.com/goldapple_ru" style="cursor: pointer;" target="_blank">
+																		<img src="https://i.postimg.cc/VNCFkhzd/vk-icon.jpg" alt="VK" border="0" width="22" style="max-width: 22px;"/>
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--  -->
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="display: inline-block; vertical-align: middle; width: 100%; max-width: 42px;">
+												<tr>
+													<td style="padding: 0px 10px; text-align: center;">
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+															<tr>
+																<td>
+																	<a href="https://www.youtube.com/channel/UC5vsg5-xOIT0N-jilqFSz_w" style="cursor: pointer;" target="_blank">
+																		<img src="https://i.postimg.cc/j56QzJwT/youtube-icon.jpg" alt="Youtube" border="0" width="22" style="max-width: 22px;"/>
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--  -->
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="display: inline-block; vertical-align: middle; width: 100%; max-width: 42px;">
+												<tr>
+													<td style="padding: 0px 10px; text-align: center;">
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+															<tr>
+																<td>
+																	<a href="https://www.youtube.com/channel/UC5vsg5-xOIT0N-jilqFSz_w" style="cursor: pointer;" target="_blank">
+																		<img src="https://i.postimg.cc/VNdVB4m8/google-icon.jpg" alt="Google" border="0" width="22" style="max-width: 22px;"/>
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--  -->
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="display: inline-block; vertical-align: middle; width: 100%; max-width: 42px;">
+												<tr>
+													<td style="padding: 0px 10px; text-align: center;">
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+															<tr>
+																<td>
+																	<a href="https://www.instagram.com/goldapple_by/?igsh=anZyZGE0M2p6Zno1" style="cursor: pointer;" target="_blank">
+																		<img src="https://i.postimg.cc/W4BXmv5G/instagram-icon.jpg" alt="Instagram" border="0" width="22" style="max-width: 22px;"/>
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!--  -->
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					
+				<!--[if (gte mso 9)|(IE)]>
+				</td>
+				</tr>
 				</table>
+				<![endif]-->
+
+			</td>
+		</tr>
+		<!--  -->
+		<tr>
+			<td>
+				<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
+				</div>
 			</td>
 		</tr>
 		<!-- End Contacts -->
 				
-		<!-- Information about mailing-->
-		<tr>
-			<td>
-				<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding: 30px 40px 60px 40px;">
-					<tr>
-						<td></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<!-- End Information about mailing -->
-
-		<!-- End Footer -->
-
+	
 	</table>
 
 	<!--[if (gte mso 9)|(IE)]>
