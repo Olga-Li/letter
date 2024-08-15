@@ -34,6 +34,7 @@
 		a {
 			text-decoration: none;
 			/* color: #e8fbfa; */
+			color: #BFBFC1;
 			font-size: 16px;
 			cursor: pointer;
 		}
@@ -58,6 +59,7 @@
 			.mobile-col-padding{
 				text-align: center;
 				padding-top: 10px !important;
+				padding-bottom: 5px !important;
 			}
 			.two-columns{
 				text-align: center;
@@ -70,11 +72,32 @@
 				padding: 0 5px;
 				margin: 10px 15px !important;
 			}
+			.nav .column{
+				margin: 0px 0px 0px 0px !important;
+			}
+			.contacts .two-columns{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			.contacts .column{
+				width: 100% !important;
+				text-align: center !important;
+			}
+			.contacts .column .mobile-col-padding{
+				width: 100% !important;
+			}
+			.contacts{
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+				max-width: 100% !important;
+			}
 		}
 
     @media screen and (max-width: 399.98px) {
 			.two-columns .column {
         width: 100% !important;
+				padding-left: 0px !important;
+				padding-right: 0px !important;
       }
 			.three-columns .column {
         width: 100% !important;
@@ -96,7 +119,11 @@
 			.four-columns .column td{
 				width: 250px;
 			}
-    }
+			.nav .column td{
+				padding-top: 5px !important;
+				padding-bottom: 5px !important;
+			}
+		}
 
 			/* Чтобы можно было использовать темную тему */
     /* Custom Dark Mode Colors */
@@ -117,6 +144,12 @@
       p {
         color: #ffffff !important;
       }
+			.button{
+			border-color: #ffffff !important;
+			}
+		.contacts img{
+		background-image: url(https://i.postimg.cc/d3v6X9PD/logo-lancome.jpg);
+		}
     } */
   </style>
 
@@ -190,15 +223,51 @@
 			
 			<!-- Nav -->
 				<tr>
-					<td>
-						<table id="menu" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="font-family: 'Georgia', serif; font-size: 10px; font-weight: 800; width: 50%;max-width: 600px; text-transform: uppercase;">
+					<td align="center" style="font-family: 'Georgia', serif; font-size: 10px; font-weight: 800; text-transform: uppercase;" class="nav four-columns mobile-padding" >
+					<!-- <td align="center" style="font-family: 'Georgia', serif; font-size: 10px; font-weight: 800; width: 50%;max-width: 600px; text-transform: uppercase;" class="four-columns mobile-padding" > -->
+						<!-- <table id="menu" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="font-family: 'Georgia', serif; font-size: 10px; font-weight: 800; width: 50%;max-width: 600px; text-transform: uppercase;" class="column">
 							<tr>
-								<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000853" style="color: #000000;" target="_blank">Макияж</a></td>
-								<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000854" style="color: #000000;" target="_blank">Уход</a></td>
-								<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000000855" style="color: #000000;" target="_blank">Ароматы</a></td>
-								<td style="padding: 15px 10px 15px 10px; text-align: center;"><a href="https://goldapple.by/brands/lancome?categories=2000001070" style="color: #000000;" target="_blank">Новинки</a></td>
-							</tr>
-						</table>
+								<td> -->
+									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; max-width: 105px; display: inline-block;" class="column">
+										<tr>
+											<td style="padding: 15px 10px 15px 10px; text-align: center;">
+												<a href="https://goldapple.by/brands/lancome?categories=2000000853" style="color: #000000;" target="_blank">Макияж</a>
+											</td>
+										</tr>
+									</table>
+								<!-- </td> -->
+							<!--  -->
+								<!-- <td> -->
+									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; max-width: 105px; display: inline-block;" class="column">
+										<tr>
+											<td style="padding: 15px 10px 15px 10px; text-align: center;">
+												<a href="https://goldapple.by/brands/lancome?categories=2000000854" style="color: #000000;" target="_blank">Уход</a>
+											</td>
+										</tr>
+									</table>
+								<!-- </td> -->
+							<!--  -->
+								<!-- <td> -->
+									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; max-width: 105px; display: inline-block;" class="column">
+										<tr>
+											<td style="padding: 15px 10px 15px 10px; text-align: center;">
+												<a href="https://goldapple.by/brands/lancome?categories=2000000855" style="color: #000000;" target="_blank">Ароматы</a>
+											</td>
+										</tr>
+									</table>
+								<!-- </td> -->
+							<!--  -->
+								<!-- <td> -->
+									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; max-width: 105px; display: inline-block;" class="column">
+										<tr>
+											<td style="padding: 15px 10px 15px 10px; text-align: center;">
+												<a href="https://goldapple.by/brands/lancome?categories=2000001070" style="color: #000000;" target="_blank">Новинки</a>
+											</td>
+										</tr>
+									</table>
+								<!-- </td> -->
+							<!-- </tr>
+						</table> -->
 					</td>
 				</tr>
 			<!-- End Nav -->
@@ -235,8 +304,8 @@
 								</td>
 							</tr>
 							<tr>
-								<td >
-									<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 600; padding: 0 0 25px 0; margin: 0;line-height: 1.2;" >Наши бестселлеры не оставят вас равнодушными!
+								<td>
+									<p style="text-align: center; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 600; padding: 0 0 25px 0; margin: 0;line-height: 1.2;">Наши бестселлеры не оставят вас равнодушными!
 										<br>Не упустите шанс порадовать себя.
 									</p>
 								</td>
@@ -245,7 +314,7 @@
 								<td>
 									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 										<tr>
-											<td class="button" style="text-align: center;   background-color: #000000;">
+											<td class="button" style="text-align: center;   background-color: #000000; border-color: #ffffff;">
 												<a href="https://goldapple.by/brands/lancome?customerdiscounts=1"  style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 35px 12px 35px; display: inline-block;" target="_blank">Подробнее</a>
 												<!-- чтобы отображались большие левые и правые поля в кнопке в outlook padding указывают с одинаковыми значениями, а перед надписью ставят пробелы (то количество, которое визуально соответствует размеру кнопки) &nbsp;&nbsp; Подробнее &nbsp;&nbsp; -->
 											</td>
@@ -313,7 +382,7 @@
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
 														<td style="text-align: center;" >
-															<a href="https://goldapple.by/19000000725-teint-idole-ultra-wear-stick-blush-stick" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+															<a href="https://goldapple.by/19000000725-teint-idole-ultra-wear-stick-blush-stick" class="button" style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
 												</table>
@@ -357,7 +426,7 @@
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
 														<td style="text-align: center;" >
-															<a href="https://goldapple.by/19000012862-hypnose-l-absolu-de-noir" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+															<a href="https://goldapple.by/19000012862-hypnose-l-absolu-de-noir" class="button" style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
 												</table>
@@ -433,7 +502,7 @@
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
 														<td style="text-align: center;" >
-														<a href="https://goldapple.by/7282300001-la-vie-est-belle" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+														<a href="https://goldapple.by/7282300001-la-vie-est-belle" class="button" style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
 												</table>
@@ -477,7 +546,7 @@
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
 														<td style="text-align: center;">
-															<a href="https://goldapple.by/15152100041-advanced-genifique" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+															<a href="https://goldapple.by/15152100041-advanced-genifique" class="button" style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
 												</table>
@@ -553,7 +622,7 @@
 												<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 													<tr>
 														<td style="text-align: center;" >
-															<a href="https://goldapple.by/14169600004-effacernes-long-tenue-spf-30" class="button" style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
+															<a href="https://goldapple.by/14169600004-effacernes-long-tenue-spf-30" class="button" style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: uppercase; padding: 12px 22px 12px 22px; display: inline-block;" target="_blank">Купить сейчас</a>
 														</td>
 													</tr>
 												</table>
@@ -598,7 +667,7 @@
 							<!--  -->
 							<tr>
 								<td style="text-align: center; padding: 15px 25px 40px 25px;" class="title">
-									<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; margin: 0; padding: 0;">Вступайте в программу лояльности Elite rewards на сайте goldapple.by</h2>
+									<h2 style="text-transform: uppercase; font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; margin: 0; padding: 0;">Вступайте в программу лояльности Elite rewards на сайте <span style="font-family: 'Georgia', serif; font-size: 20px; font-weight: 400; color: #1a1a1a;" >goldapple.by</span> </h2>
 								</td>
 							</tr>
 							<!--  -->
@@ -827,7 +896,7 @@
 						<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 							<tr>
 								<td class="button" style="text-align: center;   background-color: #000000;">
-									<a href="https://goldapple.by/cards/about"  style="text-align: center; color: #ffffff; background-color: #000000; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 14px; line-height: 16px; font-weight: 300; text-transform: uppercase; padding: 10px 40px 10px 40px; display: inline-block;" target="_blank">Зарегистрироваться <br> в Elite rewards</a>
+									<a href="https://goldapple.by/cards/about"  style="text-align: center; color: #ffffff; background-color: #000000; border-color: #ffffff; text-decoration: none; font-family: 'Arial', sans-serif; font-size: 14px; line-height: 16px; font-weight: 300; text-transform: uppercase; padding: 10px 40px 10px 40px; display: inline-block;" target="_blank">Зарегистрироваться <br> в Elite rewards</a>
 									<!-- чтобы отображались большие левые и правые поля в кнопке в outlook padding указывают с одинаковыми значениями, а перед надписью ставят пробелы (то количество, которое визуально соответствует размеру кнопки) &nbsp;&nbsp; Подробнее &nbsp;&nbsp; -->
 								</td>
 							</tr>
@@ -996,23 +1065,23 @@
 			<!-- Footer -->
 			<!-- Contacts -->
 				<tr>
-					<td style="padding: 0; ">
+					<td style="padding: 0; font-size: 0;">
 						<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
 						</div>
 					</td>
 				</tr>
 				<!--  -->
 				<tr>
-					<td style="padding: 0px 45px 0px 50px;font-size: 0;" class="two-columns mobile-padding">
+					<td align="center" style="padding: 10px 45px 0px 50px;font-size: 0;" class="two-columns mobile-padding contacts">
 						<!--[if (gte mso 9)|(IE)]>
 							<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 								<tr>
 									<td>
 						<![endif]-->
 
-						<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; width: 100%; max-width: 150px; padding: 0px 0px 10px 0px; display: inline-block; float: left; text-align: left;" class="column">
+						<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top;  max-width: 150px; padding: 0px 0px 10px 0px; display: inline-block;  text-align: left; float: left;" class="column">
 							<tr>
-								<td class="mobile-col-padding" >
+								<td align="center" class="mobile-col-padding" >
 									<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="text-align: left;">
 										<tr>
 											<td>
@@ -1024,7 +1093,7 @@
 										<!--  -->
 										<tr>
 											<td>
-												<p style="text-align: left;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600;   color: #BFBFC1; padding: 10px 0 0 0; margin: 0 0 0 0;" >8 800 500 3160
+												<p style="text-align: left;  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600;   color: #BFBFC1 !important; padding: 10px 0 0 0; margin: 0 0 0 0;" >8 800 500 3160
 												</p>
 											</td>
 										</tr>
@@ -1049,9 +1118,9 @@
 							</td><td>
 						<![endif]-->
 								
-						<table border="0"  cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top;  width: 100%; max-width: 220px; margin: 0; padding: 0px 0px 10px 0px; display: inline-block; float: right;"  class="column">
+						<table align="center" border="0"  cellspacing="0" cellpadding="0" role="presentation" style="vertical-align: top; max-width: 220px; margin: 0; padding: 0px 0px 10px 0px; display: inline-block; text-align: right; float: right;"  class="column">
 							<tr>
-								<td class="mobile-col-padding" style="text-align: right;">
+								<td align="center" class="mobile-col-padding" style="text-align: right;">
 									<table border="0" cellspacing="0" cellpadding="0" role="presentation" >
 										<tr>
 											<td style="padding-bottom: 30px;">
@@ -1160,7 +1229,7 @@
 				</tr>
 				<!--  -->
 				<tr>
-					<td>
+					<td style="font-size: 0;">
 						<div style="height: 1.5px; background-color: #BFBFC1; opacity: 0.6; vertical-align: top; width: 100%; max-width: 600px; display: inline-block;">
 						</div>
 					</td>
@@ -1169,13 +1238,13 @@
 		
 			<!-- Information about mailing-->
 				<tr>
-					<td style="padding: 20px 25px 30px 25px;" class="mobile-padding">
+					<td style="padding: 20px 25px 30px 25px;"  class="mobile-padding contacts">
 						<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" >
 							<tr>
 								<td>
 									<table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width: 100%;max-width: 600px;" >
 										<tr>
-											<td style="padding:  0px 0px 30px 0px; text-align: center;">
+											<td style="padding:  0px 0px 30px 0px; text-align: center;" class="mobile-col-padding">
 												<a href="https://goldapple.by/brands/lancome" style="cursor: pointer;" target="_blank">
 													<img src="https://i.postimg.cc/1tDMJjdL/logo-black.jpg" alt="Lancome logo" border="0" width="160"/>
 												</a>
@@ -1189,9 +1258,9 @@
 								<td style="text-align: left;  font-family: 'Arial', sans-serif; font-size: 8px; font-weight: 400;   color: #BFBFC1; margin: 0 0 0 0;">
 									<p>Данное письмо не является офертой, все цены действительны на момент отправки письма. Ознакомьтесь с политикой конфиденциальности ЗАО "Л'Ореаль".</p>
 									<p>Вы получить это письмо, поэтому что подписаны на рассылку интернет-магазина <a https="//goldapple.by/brands/lancome" style="color: #BFBFC1; font-size: 8px; text-decoration: underline;" target="_blank">www.lancome.ru.</a> Если вы не хотите получать рассылку, перейдите по ссылке <a href="https://goldapple.by/contacts"style="color: #BFBFC1; font-size: 8px; text-decoration: underline;" target="_blank">отписаться.</a></p>
-									<p>Чтобы не пропустить наши новости и акции, пожалуйста, добавьте lancome.ru в свою адресную книгу. Если у вас есть вопрос, вы можете обратиться в <a href="https://goldapple.by/contacts" style="color: #BFBFC1; font-size: 8px; text-decoration: underline;" target="_blank" >службу поддержку.</a></p>
+									<p>Чтобы не пропустить наши новости и акции, пожалуйста, добавьте <span style="color: #BFBFC1 !important; font-size: 8px;">lancome.ru</span>  в свою адресную книгу. Если у вас есть вопрос, вы можете обратиться в <a href="https://goldapple.by/contacts" style="color: #BFBFC1; font-size: 8px; text-decoration: underline;" target="_blank" >службу поддержку.</a></p>
 									<p>Продавец: ЗАО "Л'Ореаль", юридический адрес: 119180, г.Москва, 4-й Голутвинский пер., д.1/8, стр.1-2.</p>
-									<p>Телефон 8 800 500 3160</p>
+									<p style="color: #BFBFC1 !important; font-size: 8px;">Телефон 8 800 500 3160</p>
 									<p>Условия предложения не распросраняются на заказы, размещеннные до начала предложения. Продавец оставляет за собой право отменить любой заказ вследствие системной ошибки или в результате обстоятельств непреодолимой силы. Продавец оставляет за собой право заменить любое бесплатное преложение на равноценное или большее по стоимость. Настоящие предложения могут быть изменены без уведомления.</p>
 								</td>
 							</tr>
